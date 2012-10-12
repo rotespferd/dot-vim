@@ -4,9 +4,13 @@
 
 Clone the git repository:
 
-    git://github.com/rotespferd/dot-vim.git ~/.vim
+    git clone git://github.com/rotespferd/dot-vim.git ~/.vim
 
 Create symlinks:
 
     ln -s ~/.vim/vimrc ~/.vimrc
     ln -s ~/.vim/gvimrc ~/.gvimrc
+
+Create Backup directory:
+
+    mkdir ~/.vimbackup
