@@ -38,6 +38,6 @@ There is also an installscript which combines all the steps above. Just run one 
 I manage my vim plugins with Tim Pope's pathogen plugin: http://www.vim.org/scripts/script.php?script_id=2332
 
     cd ~/.vim
-    git submodule git://$pathToGitRepositiry bundle/$nameOfPlugin
+    git submodule add git://$pathToGitRepositiry bundle/$nameOfPlugin
     git submodule init
     git submodule update
