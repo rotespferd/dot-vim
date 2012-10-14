@@ -23,8 +23,12 @@ Fetch all submodules
 
 ## Install script
 
-There is also an installscript which combines all the steps above. Just run
+There is also an installscript which combines all the steps above. Just run one of the lines from your commandline.
 
-    wget https://raw.github.com/rotespferd/dot-vim/master/install.sh | sh
+### Via wget
 
-from your commandline.
+    wget --no-check-certificate https://raw.github.com/rotespferd/dot-vim/master/install.sh -O - | sh
+
+### Via curl
+
+    curl -L https://raw.github.com/rotespferd/dot-vim/master/install.sh | sh
