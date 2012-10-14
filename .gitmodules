@@ -4,3 +4,12 @@
 [submodule "bundle/coffeescript"]
 	path = bundle/coffeescript
 	url = git://github.com/kchmck/vim-coffee-script.git
+[submodule "bundle/zencoding"]
+	path = bundle/zencoding
+	url = git://github.com/mattn/zencoding-vim.git
+[submodule "bundle/nodejs"]
+	path = bundle/nodejs
+	url = git://github.com/guileen/vim-node.git
+[submodule "bundle/nodejs-complete"]
+	path = bundle/nodejs-complete
+	url = git://github.com/myhere/vim-nodejs-complete.git
