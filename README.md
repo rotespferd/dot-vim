@@ -14,3 +14,17 @@ Create symlinks:
 Create Backup directory:
 
     mkdir ~/.vimbackup
+
+Fetch all submodules
+
+    cd ~/.vim
+    git submodule init
+    git submodule update
+
+## Install script
+
+There is also an installscript which combines all the steps above. Just run
+
+    wget https://raw.github.com/rotespferd/dot-vim/master/install.sh | sh
+
+from your commandline.
