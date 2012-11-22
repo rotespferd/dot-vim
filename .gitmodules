@@ -16,3 +16,12 @@
 [submodule "bundle/MatchTag"]
 	path = bundle/MatchTag
 	url = git://github.com/gregsexton/MatchTag.git
+[submodule "bundle/lesscss"]
+	path = bundle/lesscss
+	url = https://github.com/groenewege/vim-less.git
+[submodule "bundle/css3-syntax"]
+	path = bundle/css3-syntax
+	url = https://github.com/hail2u/vim-css3-syntax.git
+[submodule "bundle/css-color"]
+	path = bundle/css-color
+	url = https://github.com/hail2u/vim-css3-syntax.git
