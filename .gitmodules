@@ -28,3 +28,9 @@
 [submodule "bundle/css-color-test"]
 	path = bundle/css-color-test
 	url = git://github.com/ap/vim-css-color.git
+[submodule "bundle/jshint"]
+	path = bundle/jshint
+	url = git://github.com/walm/jshint.vim.git
+[submodule "bundle/NERDTree"]
+	path = bundle/NERDTree
+	url = git://github.com/scrooloose/nerdtree.git
