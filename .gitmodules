@@ -25,9 +25,6 @@
 [submodule "bundle/xmledit"]
 	path = bundle/xmledit
 	url = git://github.com/sukima/xmledit.git
-[submodule "bundle/css-color"]
-	path = bundle/css-color
-	url = git://github.com/ap/vim-css-color.git
 [submodule "bundle/css-color-test"]
 	path = bundle/css-color-test
 	url = git://github.com/ap/vim-css-color.git
