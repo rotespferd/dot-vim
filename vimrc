@@ -3,6 +3,9 @@ set nocompatible
 " Initialize Pathogen
 call pathogen#infect()
 
+" Enable Neocomplcache
+let g:neocomplcache_enable_at_startup = 1
+
 " Enable syntax highlighting
 syntax on
 filetype plugin indent on
