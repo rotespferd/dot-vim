@@ -21,7 +21,7 @@ syntax on
 filetype plugin indent on
 
 " Colorscheme see https://github.com/hukl/Smyck-Color-Scheme
-color smyck
+color solarized
 
 " Add line numbers
 set number
@@ -31,7 +31,8 @@ set ruler
 set encoding=utf-8
 
 " Whitespace stuff
-set nowrap
+set wrap
+set wrapmargin=4
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
