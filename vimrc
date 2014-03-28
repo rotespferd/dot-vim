@@ -1,13 +1,12 @@
 set nocompatible
+filetype off
 
-" Initialize Pathogen
-call pathogen#infect()
+" Enable vundle
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
 
-" Enable Neocomplcache
-let g:neocomplcache_enable_at_startup = 1
-" Configure Neocomplcache
-let g:neocomplcache_enable_smart_case = 1
-let g:neocomplcache_min_syntax_length = 3
+" the PLUGIN section
+Plugin 'gmarik/vundle'
 
 " Enable omni completion
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
@@ -57,9 +56,6 @@ autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 set incsearch
 set hlsearch
 
-" Map Ctrl+l to clear highlighted searches
-nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
-
 " Highlight characters behind the 80 chars margin
 :au BufWinEnter * let w:m2=matchadd('ColumnMargin', '\%>80v.\+', -1)
 
@@ -70,10 +66,6 @@ set nofoldenable
 set backupdir=~/.vimbackup
 set directory=~/.vimbackup
 
-" NERDTree configuration
-let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$']
-map <Leader>n :NERDTreeToggle<CR>
-
 " make uses real tabs
 au FileType make set noexpandtab
 
@@ -81,7 +73,7 @@ au FileType make set noexpandtab
 au FileType erlang set softtabstop=4 tabstop=4 shiftwidth=4
 
 " Thorfile, Rakefile, Vagrantfile and Gemfile are Ruby
-au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru}    set ft=ruby
+au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru,Podfile}    set ft=ruby
 
 " md, markdown, and mk are markdown and define buffer-local preview
 au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn} call s:setupMarkup()
